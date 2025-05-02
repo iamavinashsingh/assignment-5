@@ -62,6 +62,17 @@
                     <button class="btn btn-cart">Add to Cart</button>
                     <button class="btn btn-buy">Buy it Now</button>
                 </div>
+
+                <div class="product-description">
+                    <div onclick="openDescriptionModal()" class="product-modal">
+                        <h4>Product Description</h4>
+                        <p class="description-text">+</p>
+                    </div>                   
+                    <div onclick="openReviewModal()"  class="product-modal">
+                        <h4>Rating &nbsp;&nbsp;&nbsp; (4.6/5)</h4>
+                        <p class="description-text">+</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -77,7 +88,61 @@
                 <img src="https://qikink.com/wp-content/uploads/2023/08/Mens-Polo-size-chart-qikink-1024x538.webp" alt="size chart">          
             </div>            
         </div>
-
+        <!--  ------------------                 Descrption Modal    ---------------------------------->
+        <div id="descriptionModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Product Description</h2>
+                    <button class="close-modal" onclick="closeDescriptionModal()">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </div>                   
+                <div class="description-body">
+                    <ul>
+                        <li><strong>About the T-Shirt:</strong> Oversized fit with a vibrant banana-themed design, perfect for casual outings or lounging at home.</li>
+                        <li><strong>Fabric Type:</strong> Premium quality cotton for ultimate comfort and durability.</li>
+                        <li><strong>Made In:</strong> Proudly crafted in India with attention to detail.</li>
+                        <li><strong>Washing Details:</strong> Machine wash cold, tumble dry low, do not bleach.</li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--  ------------------                Review Modal    ---------------------------------->
+        <div id="reviewModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Public Review</h2>
+                    <button class="close-modal" onclick="closeReviewModal()">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </div>                   
+                <div class="review">
+                    <p><strong>John Doe</strong> - <em>March 15, 2025</em></p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>Amazing quality! The fabric is super soft and the design is vibrant. Highly recommend!</p>
+                </div>
+                <div class="review">
+                    <p><strong>Jane Smith</strong> - <em>March 10, 2025</em></p>
+                    <p>⭐⭐⭐⭐</p>
+                    <p>Great t-shirt, but the fit was slightly larger than expected. Still love it!</p>
+                </div>
+                <div class="review">
+                    <p><strong>Michael Brown</strong> - <em>March 8, 2025</em></p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>Perfect for casual wear. The banana design is so fun and unique!</p>
+                </div>
+                <div class="review">
+                    <p><strong>Emily Davis</strong> - <em>March 5, 2025</em></p>
+                    <p>⭐⭐⭐⭐</p>
+                    <p>Good quality, but I wish there were more color options available.</p>
+                </div>
+                <div class="review">
+                    <p><strong>Chris Wilson</strong> - <em>March 1, 2025</em></p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>Exceeded my expectations! The oversized fit is super comfortable.</p>
+                </div>
+            </div>
+        </div>
         <!-- --------------                Scrollable Products      ----------------------------------->
         <div class="scrollable-products">
             <h2>You Might Also Like</h2>

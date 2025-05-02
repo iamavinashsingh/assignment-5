@@ -22,6 +22,24 @@ function closeModal() {
     document.getElementById('sizeModal').style.display = 'none';
 }
 
+// Description Modal Handling
+function openDescriptionModal() {
+    document.getElementById('descriptionModal').style.display = 'flex';
+}
+
+function closeDescriptionModal() {
+    document.getElementById('descriptionModal').style.display = 'none';
+}
+
+
+// Review Modal Handling
+function openReviewModal() {
+    document.getElementById('reviewModal').style.display = 'flex';
+}
+function closeReviewModal() {
+    document.getElementById('reviewModal').style.display = 'none';
+}
+
 // Close modal when clicking outside
 window.onclick = function(event) {
     if (event.target.className === 'modal') {

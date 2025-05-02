@@ -213,7 +213,7 @@ body {
 /* ===================                    BuyNOw Button              ===================================*/
 .action-buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
 }
 
@@ -240,6 +240,22 @@ body {
 }
 .btn:active {
     transform: scale(0.98);
+}
+/* ===================                   Product details          ===================================*/
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.product-modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.025rem solid var(--secondary-color);
 }
 
 /* ========================                         Size Chart Modal              ============================ */
@@ -284,6 +300,10 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--primary-color);
+}
+/* ========================                         Review Modal              ============================ */
+.review{
+    margin-top: 1rem;
 }
 /*  ======================                    Scrollable Products          =============================  */
 .scrollable-products {
