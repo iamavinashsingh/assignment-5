@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Bliss Oversized T-Shirt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--  -----------------                Navbar Section       -------------------->
+    <div class="navbar">
+        <div class="brand-logo">
+            <img src="https://www.bananathreads.com/cdn/shop/files/1.jpg?v=1744474007&width=120" alt="Logo">
+            <div class="page-list">
+                <a href="#">Home</a>
+                <a href="#">Catalog</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>            
+        <div class="icon-set">
+            <i class="ri-search-line"></i>
+            <i class="ri-user-line"></i>
+            <i class="ri-shopping-bag-3-line"></i>
+        </div>
+    </div>
+    <div class="container">
+        
+        <!--  -----------------                Product Section       -------------------->
+        <div class="product-container">
+            <img src="https://plus.unsplash.com/premium_photo-1718913936342-eaafff98834b?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-image" alt="Banana Bliss T-Shirt">
+            <div class="product-details">
+                <p id="my-store" class="product-text">MY STORE</p>
+                <h1 class="product-title">BANANA BLISS OVERSIZED T-SHIRT</h1>                
+                <p class="product-price">Rs. 1,178.82</p>
+                <p id="product-tag" class="product-text">Taxes included, <span id="shipping">Shipping</span> calculated at checkout</p>
+                
+                <div class="product-size">
+                    <p id="size-text" class="product-text">Size</p>                    
+                    <div class="size-buttons">
+                        <button class="size-btn">S</button>
+                        <button class="size-btn active">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                        <button class="size-btn">XXL</button>                        
+                    </div>
+                    <div class="size-chart-cta" onclick="openModal()">View Size Chart</div>
+                </div>
+                
+                <div class="product-quantity">
+                    <p id="quantity-text" class="product-text">Quantity</p>
+                    <div class="quantity-selector">
+                        <button class="qty-btn" onclick="adjustQuantity(-1)">-</button>
+                        <span id="quantity">1</span>
+                        <button class="qty-btn" onclick="adjustQuantity(1)">+</button>
+                    </div>
+                </div>
+                
+
+                <div class="action-buttons">
+                    <button class="btn btn-cart">Add to Cart</button>
+                    <button class="btn btn-buy">Buy it Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!--  ------------------                 Size Chart Modal    ---------------------------------->
+        <div id="sizeModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Size Chart</h2>
+                    <button class="close-modal" onclick="closeModal()">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </div>                   
+                <img src="https://qikink.com/wp-content/uploads/2023/08/Mens-Polo-size-chart-qikink-1024x538.webp" alt="size chart">          
+            </div>            
+        </div>
+
+        <!-- --------------                Scrollable Products      ----------------------------------->
+        <div class="scrollable-products">
+            <h2>You Might Also Like</h2>
+            <div class="scrollable-products-container">
+                <button onclick="scrollLeftBtn()"><i class="ri-arrow-left-line"></i></button>                 
+                <div class="products-scroll">
+                    <!--  -----------------                Product Card       -------------------->
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/885021/pexels-photo-885021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Product">
+                        <h3>Product 1</h3>
+                        <p>Rs. 99.00</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product">
+                        <h3>Product 2</h3>
+                        <p>Rs. 199.00</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product">
+                        <h3>Product 3</h3>
+                        <p>Rs. 299.00</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product">
+                        <h3>Product 4</h3>
+                        <p>Rs. 399.00</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/4210374/pexels-photo-4210374.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product">
+                        <h3>Product 5</h3>
+                        <p>Rs. 499.00</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/3373724/pexels-photo-3373724.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product">
+                        <h3>Product 6</h3>
+                        <p>Rs. 599.00</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/8128069/pexels-photo-8128069.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product">
+                        <h3>Product 7</h3>
+                        <p>Rs. 699.00</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/31854575/pexels-photo-31854575/free-photo-of-paradise-night-dream-gummies-cbd-product.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product">
+                        <h3>Product 8</h3>
+                        <p>Rs. 799.00</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/31842234/pexels-photo-31842234/free-photo-of-luxury-chanel-no-5-perfume-bottle-on-soft-fabric.png?auto=compress&cs=tinysrgb&w=600" alt="Product">
+                        <h3>Product 9</h3>
+                        <p>Rs. 899.00</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/19049367/pexels-photo-19049367/free-photo-of-a-tube-of-a-cosmetic-product-without-a-label.png?auto=compress&cs=tinysrgb&w=600" alt="Product">
+                        <h3>Product 10</h3>
+                        <p>Rs. 999.00</p>
+                    </div>
+                    <!--  -----------------                Product Cards    End   -------------------->
+                </div>
+                <button onclick="scrollRightBtn()"><i class="ri-arrow-right-line"></i></button>            
+            </div>            
+        </div>
+    </div>
+        <!--  -----------------                Footer Section       -------------------->
+    <footer>
+        <div>
+            <h3>&copy;2025 All Rights Reserved</h3>
+        </div>
+        <div class="social-icons">
+            <i class="ri-facebook-fill"></i>
+            <i class="ri-instagram-line"></i>
+            <i class="ri-twitter-fill"></i>
+        </div>        
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
